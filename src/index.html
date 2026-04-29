@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de unidades</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1 class="page-title">Conversor de unidades</h1>
+    </header>
+
+    <main>
+        <div class="container temperature">
+            <h2 class="container-title">Temperatura</h2>
+            <div class="converting">
+                <div class="left-side">
+                    <select name="convert-dropdown" id="convert-dropdown" class="dropdown">
+                        <option value="Celsius">Celsius (°C)</option>
+                        <option value="Fahrenheit">Fahrenheit (°F)</option>
+                        <option value="Kelvin">Kelvin (K)</option>
+                    </select>
+                    <input type="number" id="temp-input" class="convert-input" placeholder="Digite o valor:">
+                </div>
+                <div class="right-side">
+                    <select name="outcome-dropdown" id="outcome-dropdown" class="dropdown">
+                        <option value="Celsius">Celsius (°C)</option>
+                        <option value="Fahrenheit">Fahrenheit (°F)</option>
+                        <option value="Kelvin">Kelvin (K)</option>
+                    </select>
+                    <input type="number" disabled id="temp-outcome" class="convert-input output" placeholder="0">
+                </div>
+            </div>
+        </div>
+
+        <div class="container distance">
+            <h2 class="container-title">Distância</h2>
+            <div class="converting">
+                <div class="left-side">
+                    <div class="switch">
+                        <span class="unit-measure">Métrico</span>
+
+                        <input type="checkbox" name="measure-switch-input" id="measure-switch-input" class="measure-switch">
+                        <label for="measure-switch-input" class="measure-switch-label"></label>
+
+                        <span class="unit-measure">Imperial</span>
+                    </div>
+                    <select name="measure-dropdown-input" id="measure-dropdown-input" class="dropdown">
+                        <option value="Milimeter">Milímetro (mm)</option>
+                        <option value="Centimeter">Centímetro (cm)</option>
+                        <option value="Meter">Metro (m)</option>
+                        <option value="Kilometer">Quilômetro (km)</option>
+                    </select>
+                    <input type="number" id="distance-input" class="convert-input" placeholder="Digite o valor:">
+                </div>
+                <div class="right-side">
+                    <div class="switch">
+                        <span class="unit-measure">Métrico</span>
+
+                        <input type="checkbox" name="measure-switch-output" id="measure-switch-output" class="measure-switch" checked>
+                        <label for="measure-switch-output" class="measure-switch-label"></label>
+
+                        <span class="unit-measure">Imperial</span>
+                    </div>
+                    <select name="measure-dropdown-output" id="measure-dropdown-output" class="dropdown">
+                        <option value="Inch">Polegada (in)</option>
+                        <option value="Feet">Pé (ft)</option>
+                        <option value="Yard">Jarda (yd)</option>
+                        <option value="Mile">Milha (mi)</option>
+                    </select>
+                    <input type="number" disabled id="distance-outcome" class="convert-input output" placeholder="0">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contact">
+            <a href="https://github.com/ZjW1ll">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/_zjwill/">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
